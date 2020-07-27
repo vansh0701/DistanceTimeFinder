@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<title>DistanceTImeFinder</title>
+	<link rel="stylesheet" type="text/css" href="static/style.css" >
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<!-- <div id="maincontainer"> -->
+		<div id=image_container>
+					{% for message in messages %}
+					<div id="error">
+					 	<ul>
+						 	<li>{{message}}</li>
+					 	</ul>
+					</div>
+					{% endfor %}
+					<form action="result" id="inputform" method="POST">
+					{% csrf_token %}
+    				<div id="origin" ><input name="origin" type="text" placeholder="Origin"></div>
+    				<div id="destination"><input name="destination" type="text"  placeholder="Destination"></div>
+    				
+    				<div id="submit"><input type="submit" id="submit" placeholder="Enter"></div>
+					</form>
+		</div>
+
+   <!--  </div> -->
+</body>
+
+</html>

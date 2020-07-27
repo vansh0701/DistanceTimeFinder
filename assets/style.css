@@ -1,0 +1,158 @@
+body{
+	background-color: #000;
+	background-image: url("background.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin:0px;
+	/*filter:brightness(100%);*/
+	
+	
+}
+
+/*#main_container{
+max-height:  auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0  auto;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+
+}*/
+
+#image_container{
+	
+	height:900px;
+	width:720px;
+
+/*	background-image: url("background.jpeg");
+	background-size: 100%;*/
+
+	background-repeat: no-repeat;
+	background-color: rgba(0,0,0,0.3);
+	box-shadow: 10px 10px 20px rgba(183,183,183,0.3),
+	           -10px -10px 20px rgba(183, 183, 183,  0.3);
+	
+	filter:drop-shadow(5px 5px 8px rgba(183,183,183,0.3));
+	margin: 0  auto;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	
+	/*filter: blur(1px);*/
+}
+
+form{
+
+	perspective: 10000px;
+	-webkit-perspective:1000px;
+}
+
+
+input{
+    border-radius: 6px;
+	/*border: 2px solid rgba(0,0,0,0.1) /*#585A9CFF*/ ;*/
+	padding: 10px,10px;
+	text-align: center;
+
+
+}
+
+#origin{
+	
+	position: relative;
+	left:-150px;
+	bottom:-500px;
+	transform:rotate(5deg);
+	
+
+}
+
+#destination{
+	position:relative;
+	left:70px;
+	bottom:-447px;
+	transform:rotate(-2deg);
+	
+}
+#submit{
+
+	position:relative;
+	left:3px;
+	bottom:-275px;
+	transform-style: preserve-3d;
+	transform: rotateX(20deg);
+
+	
+}
+
+
+
+ input[type="text"]
+{
+	color:#fff;
+	font-weight: ;
+	background:transparent;
+	outline:none; /*stops the browser to highlight the stuff when cursor gets on to it*/
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1),
+				1px -1px 1px rgba(0,0,0,0.1),
+				-1px 1px 1px rgba(0,0,0,0.1),
+				-1px -1px 1px rgba(0,0,0,0.1) ;
+	width: 100px;
+	height:20px;
+	padding: 10px,10px;
+
+}
+
+input[type="submit"]
+{
+
+	color:#fff;
+	background:transparent;
+	outline:none; /*stops the browser to highlight the stuff when cursor gets on to it*/
+	box-shadow: none;
+	padding: 10px,10px;
+}
+
+
+::placeholder{
+	color: #fff
+
+}
+
+
+.output{
+	/*border:2px solid #000;*/
+	position :relative;
+	bottom: -300px;
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 40px;
+
+	animation: fadein 3s ease;
+
+
+}
+
+
+@keyframes fadein
+
+{
+	0%{
+		opacity: 0%;
+	}
+
+	50%{
+		opacity: 50%;
+	}
+	
+	100%{
+		opacity:100%;
+	}
+
+
+}
+
+
